@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative CSS Homepage</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Basic Styles */
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        h2 {
+            color: darkslategray;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: darkorange;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: orangered;
+        }
+        
+        .content-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .color-box {
+            background-color: #e0f7fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Selectors Examples */
+        .title {
+            font-weight: bold;
+            color: navy;
+        }
+        
+        #intro {
+            font-style: italic;
+            color: darkorange;
+        }
+        
+        /* Font and Text Styling */
+        .text-styling {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: #333;
+        }
+        
+        /* Box Model */
+        .box-model {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px auto;
+            background-color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        /* Display and Position */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .box-model {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Creative CSS Homepage</h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#colors">Colors</a>
+        <a href="#text-styling">Text Styling</a>
+        <a href="#box-model">Box Model</a>
+        <a href="#layout">Layout</a>
+    </nav>
+
+    <div class="content-section" id="intro">
+        <h2 class="title">Introduction to CSS</h2>
+        <p id="intro">This is an introduction to CSS using various selectors and styles.</p>
+    </div>
+
+    <div class="content-section" id="colors">
+        <h2>Colors in CSS</h2>
+        <div class="color-box">
+            <p class="color-example">This text is red using a color name.</p>
+            <p class="hex-example">This text is #ff5733 using a HEX code.</p>
+            <p class="rgb-example">This text is rgb(0, 128, 0) using RGB values.</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="text-styling">
+        <h2>Fonts and Text Styling</h2>
+        <p class="text-styling">This paragraph demonstrates different font styles and text alignment.</p>
+    </div>
+
+    <div class="content-section" id="box-model">
+        <h2>CSS Box Model</h2>
+        <div class="box-model">
+            This box has content, padding, a border, and a margin.
+        </div>
+    </div>
+
+    <div class="content-section" id="layout">
+        <h2>CSS Layout: Display and Position</h2>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Creative CSS Homepage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
